@@ -1,0 +1,9 @@
+
+path:  #dataset roo dir
+train: #train images (rel to path)
+val:   #val images (rel to path)
+
+names:
+  0: nadawca
+  1: odbiorca
+  2: uwagi
