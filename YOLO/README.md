@@ -1,4 +1,1 @@
-# LabelMasters --> NER
-
-Model development and design for YOLO to help in OCR module. 
-
+Model development and design for YOLO. Same as was run on colab. 
