@@ -7,4 +7,6 @@ Similarly, because of the sheer size of the files i can neither upload the train
 
 Examples of said generated set are in Data folder.
 
+After my defence the actual thesis will also be uploaded here in some manner. 
+
 
