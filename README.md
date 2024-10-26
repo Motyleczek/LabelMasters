@@ -6,9 +6,13 @@ Zarówno ze względu na rozmiar przechowywanych danych jak i prostotę dostępu 
 
 ## Struktura repozytorium
 
-### LabelMasters
+Poglądowy plan repozytorium. Szczegółowy opis zawartości znajduje się w podfolderach w pikach `README.md`. W samym folderze `LabelMasters`
+najistotniejszy jest plik `final_script_cleaned.ipynb`, który został zastosowany do obliczeń finalnych miar WER/CER/MER oraz dla generacji przykładowych detekcji (umieszczonych potem w folderze `tess_detect_ex/`).
 
-Poglądowy plan repozytorium. Szczegółowy opis zawartości znajduje się w podfolderach w pikach `README.md`. 
+- **Data**: wszystkie pliki związane z generacją i obróbką danych w postaci graficznej, przykłady wygenerowanych obrazów, pełne listy `.xcl` generowanego zestawu danych, dokładny opis plików w folderze
+- **YOLO**: na githubie jedynie przykładowy plik config, lokalnie tam przechowywany był model nauczony i pobrany ze środowiska colabolatory
+- **ran_on_colab**: notebook zastosowany do nauczenia modelu do klasteryzacji obrazu przed obróbką tesseract, w folderze jest podfolder w którym odtworzona została odtworzona struktura projektu na google drive + colab, dokładny opis w folderze
+- **tess_detect_ex**: przykładowe detekcje na fragmentach obrazów (nazwy plików zaczynające się od `wycinek`) oraz na tych samych fragmentach poddanych takiemu samemu preprocessingowi dla modelu tesseract (nazwy plików zaczynające się od `tess`)
 
 ```plaintext
 LabelMasters/
@@ -23,7 +27,9 @@ LabelMasters/
 │   ├── trainYoloV8CostumDataset.ipynb    # notebook do nauki modelu 
 |   ├── README.md                         # opis struktury folderów w gdrive_structure/
 |   └── gdrive_stucture/                  # pokazanie struktury folderów z google drive, z przykładami
-|       └── ...                           
+|       └── ...         
+├── tess_detect_ex/      # przykładowe detekcje    
+|   └── ... 
 ├── .gitignore            
 ├── final_script_clean.ipynb    # skrypt do obliczeń miar WER/CER/MER oraz dla generacji przykładowych detekcji
 ├── requirements.txt            # potrzebne biblioteki
