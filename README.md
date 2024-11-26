@@ -9,11 +9,12 @@ Zarówno ze względu na rozmiar przechowywanych danych jak i prostotę dostępu 
 Poglądowy plan repozytorium. Szczegółowy opis zawartości znajduje się w podfolderach w pikach `README.md`. W samym folderze `LabelMasters`
 najistotniejszy jest plik `final_script_cleaned.ipynb`, który został zastosowany do obliczeń finalnych miar WER/CER/MER oraz dla generacji przykładowych detekcji (umieszczonych potem w folderze `tess_detect_ex/`). Równie istotnym jest plik `ran_on_colab/trainYoloV8CostumDataset.ipynb` - notebook wykorzystywany przy uczeniu modeli. Dodatkowo, dzięki funkcjonalności automatycznie dostępnej w bibliotece Ultralytics zawsze po procesie uczenia automatycznie generowała wykresy wykorzystywane przeze mnie do analizy wydajności modeli. Zatem w tym notebooku zarówno trenuje model jak i generuję wykresy do jego analizy. 
 
-Finalnie folder `result_graphics` zawiera w sobie zebrane w jednym miejscu wszystkie grafiki znajdujące się w rozdziale **Analiza wyników** w pracy magisterskiej. 
+Finalnie folder `result_graphics` zawiera w sobie zebrane w jednym miejscu wszystkie grafiki znajdujące się w rozdziale *Analiza wyników* w pracy magisterskiej. 
 
 - **Data**: wszystkie pliki związane z generacją i obróbką danych w postaci graficznej, przykłady wygenerowanych obrazów, pełne listy `.xcl` generowanego zestawu danych, dokładny opis plików w folderze
 - **YOLO**: na githubie jedynie przykładowy plik config, lokalnie tam przechowywany był model nauczony i pobrany ze środowiska colabolatory
 - **ran_on_colab**: notebook zastosowany do nauczenia modelu do klasteryzacji obrazu przed obróbką tesseract, w folderze jest podfolder w którym odtworzona została odtworzona struktura projektu na google drive + colab, dokładny opis w folderze
+- **result_graphics**: wyniki uzyskane w trakcie tworzenia projektu zawarte w rozdziale *Analiza wyników* w pracy magisterskiej, w formie graficznej (np grafy, przykładowe detekcje etc.)
 - **tess_detect_ex**: przykładowe detekcje na fragmentach obrazów (nazwy plików zaczynające się od `wycinek`) oraz na tych samych fragmentach poddanych takiemu samemu preprocessingowi dla modelu tesseract (nazwy plików zaczynające się od `tess`)
 
 ```plaintext
@@ -30,6 +31,8 @@ LabelMasters/
 |   ├── README.md                         # opis struktury folderów w gdrive_structure/
 |   └── gdrive_stucture/                  # pokazanie struktury folderów z google drive, z przykładami
 |       └── ...         
+├── result_graphics/      # graficzne wyniki pracy zawarte w rodziale analiza wynikow   
+|   └── ... 
 ├── tess_detect_ex/      # przykładowe detekcje    
 |   └── ... 
 ├── .gitignore            
